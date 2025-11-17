@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page 1</title>
+    <link rel="stylesheet" href="./service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href=""><img src="./image/logo-removebg-preview.webp" alt="company logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./error.html">Projects</a></li>
+                <li><a href="./error.html">Blog</a></li>
+                <li><a href="./error.html">Dashboard</a></li>
+                <li><a href="./error.html">Contact</a></li>
+                <a href="./error.html"><button class="loginbtn">LogIn</button></a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+
+    <!-- section hero -->
+
+    <section class="service-hero">
+        <div class="service-hero-overlay">
+            <div class="service-hero-content">
+                <h5>OUR SERVICES</h5>
+                <h1>Innovative Renewable Energy Solutions</h1>
+                <a href="./index.html" class="service-btn">Home</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section services -->
+
+    <section class="service-feature">
+        <div class="service-wrapper">
+
+            <!-- LEFT SIDE LIST -->
+            <ul class="service-list">
+                <li data-img="./image/about.webp"
+                    data-desc="Our Solar Panel Installation service delivers high-efficiency photovoltaic systems designed for long-term reliability. We handle everything from site assessment and system design to installation and performance monitoring, ensuring maximum energy output and reduced utility bills for homes, businesses, and industries.">
+                    Solar Panel Installation
+                </li>
+
+                <li data-img="./image/windmill instalation.webp"
+                    data-desc="Our Windmill Installation solutions provide sustainable, large-scale energy generation using advanced turbine technology. We offer full project planning, structural setup, environmental assessment, and maintenance support to ensure strong and consistent wind energy production for communities and industrial zones.">
+                    Windmill Installation
+                </li>
+
+                <li data-img="./image/global.webp"
+                    data-desc="The Global Energy Network connects regions and countries through intelligent power distribution systems. We work on smart grid development, cross-border energy routing, and load balancing to ensure stable, reliable, and eco-friendly power availability worldwide.">
+                    Global Energy Network
+                </li>
+
+                <li data-img="./image/sun.webp"
+                    data-desc="Sun Energy Analytics helps organizations maximize solar output using real-time tracking, predictive insights, and consumption patterns. Our analysis tools allow customers to evaluate efficiency, identify wastage, and optimize solar performance for long-term sustainability.">
+                    Sun Energy Analytics
+                </li>
+
+                <li data-img="./image/powerlines.webp"
+                    data-desc="Our Technological Power Lines integrate modern engineering to ensure faster, safer, and loss-free energy transmission. Using high-strength materials and advanced safety protocols, we create power networks that support modern infrastructure and future renewable expansion.">
+                    Technological Power Lines
+                </li>
+
+                <li data-img="./image/economical.webp"
+                    data-desc="Economical Lighting focuses on delivering cost-saving LED and solar-powered lighting systems. We design energy-efficient solutions for homes, offices, streets, and commercial spaces to drastically reduce electricity use while maintaining excellent brightness and durability.">
+                    Economical Lighting
+                </li>
+
+                <li data-img="./image/repair.webp"
+                    data-desc="Our Support and Repair team provides 24/7 assistance for all renewable energy installations. From troubleshooting and part replacement to performance checks and emergency repairs, we ensure your energy systems operate safely and efficiently at all times.">
+                    Support and Repair
+                </li>
+
+                <li data-img="./image/recycle.webp"
+                    data-desc="Recycling Excess Energy allows users to store and reuse unused power using advanced battery systems and energy conversion methods. This reduces wastage, ensures energy availability during peak hours, and supports a more sustainable and efficient power lifestyle.">
+                    Recycling Excess Energy
+                </li>
+            </ul>
+
+
+            <!-- RIGHT SIDE IMAGE -->
+            <div class="service-image-box">
+                <img id="service-image" src="./image/solar and wind.webp" alt="Service Image">
+                <div class="service-hover-text" id="hover-text">
+                    We install high-efficiency solar panels for homes and businesses.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        const listItems = document.querySelectorAll(".service-list li");
+        const serviceImage = document.getElementById("service-image");
+        const hoverText = document.getElementById("hover-text");
+
+        // Set default active
+        listItems[0].classList.add("active");
+
+        listItems.forEach((item) => {
+            item.addEventListener("click", () => {
+
+                // remove active class from others
+                listItems.forEach(li => li.classList.remove("active"));
+                item.classList.add("active");
+
+                // change image
+                const newImg = item.getAttribute("data-img");
+                serviceImage.src = newImg;
+
+                // change hover text
+                const description = item.getAttribute("data-desc");
+                hoverText.innerText = description;
+            });
+        });
+
+    </script>
+</body>
