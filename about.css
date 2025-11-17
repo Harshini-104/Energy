@@ -95,55 +95,50 @@ nav {
 
 /* section main */
 
-.main-about-hero {
+.main-about {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
+    background: url("./image/aboutgif.gif") center/cover no-repeat;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.main-bg-video {
+
+.main-about .main-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
-
-.main-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: -1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
 }
 
 .main-about-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
     padding: 20px;
 }
 
+
 .main-about-content h1 {
-    font-size: 64px;
+    font-size: 60px;       
     letter-spacing: 2px;
+    margin-bottom: 20px;
     font-weight: 700;
-    margin-bottom: 15px;
 }
 
+
 .main-about-content p {
-    font-size: 25px;
+    font-size: 20px;          
     max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
+    margin: auto;
+    line-height: 30px;        
 }
 
 /* section about */
@@ -224,9 +219,380 @@ nav {
 }
 
 .about-main-img img {
-    width: 100%;
-    max-width: 520px;
+    width: 110%;
+    max-width: 650px;
+    height: 450px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
     object-fit: cover;
+}
+
+/* section statistics */
+
+.energy-stats-section {
+  position: relative;
+  background-image: url("./image/solarfactory.webp"); 
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.energy-stats-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 5, 38, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.energy-stats-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  text-align: center;
+}
+
+.energy-stat h3 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: bold;
+  color: #f1c40f
+}
+
+.energy-stat p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+}
+
+
+/* section about */
+.about-company {
+    padding: 80px 20px;
+    background: #f4f6f8;
+}
+
+.aboutcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.aboutcontent {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+.aboutcontent h5 {
+    font-size: 16px;
+    color: #3498db;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.aboutcontent h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.aboutcontent h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.aboutcontent .highlight {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.aboutcontent p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.aboutcontent .about-points {
+    list-style: none;
+    padding: 0;
+}
+
+.aboutcontent .about-points li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.aboutcontent .about-points li::before {
+    content: "✔";
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.aboutimage {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.aboutimage img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+/* section team */
+
+.team-section {
+  width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 38px;
+  color: #3498db;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-member {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(68, 68, 70, 0.85);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.team-member:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.overlay p {
+  margin: 5px 0 15px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f1c40f;
+}
+
+
+
+/* section work */
+
+
+.work {
+  background: #f4f7fb;
+  padding: 100px 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.work h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #0077b6;
+  margin-bottom: 60px;
+}
+
+
+.wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.mainbox {
+  flex: 1 1 40%;
+  background: url('./image/windmill.webp') no-repeat center center;
+  background-size: cover;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  
+}
+
+.mainbox h1 {
+  font-size: 30px;
+  color: #260e89;
+  margin-bottom: 20px;
+}
+
+.mainbox p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.learnbtn {
+  display: inline-block;
+  background: #00b4d8;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.learnbtn:hover {
+  background: #0077b6;
+  transform: scale(1.05);
+}
+
+
+
+.stepsboxes {
+  flex: 1 1 55%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+
+.stepbox {
+  background: linear-gradient(135deg, #d0ee76, #5efbcf);
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.stepbox:hover {
+  background: linear-gradient(135deg, #5efbcf, #d0ee76);
+
+}
+
+
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.step i {
+  font-size: 45px;
+  color: #00b;
+}
+
+.step img {
+  height: 55px;
+  border-radius: 5px;
+ 
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 700;
+  color: gray;
+}
+
+
+.stepbox h3 {
+  font-size: 18px;
+  color: #0077b6;
+  margin-bottom: 8px;
+}
+
+.stepbox p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 992px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .stepsboxes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .stepsboxes {
+    grid-template-columns: 1fr;
+  }
+  .mainbox {
+    margin-bottom: 40px;
+  }
 }
