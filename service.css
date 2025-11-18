@@ -226,3 +226,72 @@ nav {
 .service-image-box:hover .service-hover-text {
     opacity: 1;
 }
+
+
+/* section providers */
+
+.energy-services {
+    padding: 80px 20px;
+    background: #f4f8fc;
+}
+
+.energy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.energy-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0a3d62;
+    margin-bottom: 10px;
+}
+
+.energy-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.energy-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.energy-card {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.energy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* ICON */
+.energy-icon {
+    font-size: 40px;
+    color: #00a8ff;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.energy-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a3d62;
+}
+
+.energy-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+}
+
