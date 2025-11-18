@@ -254,14 +254,14 @@ nav {
     margin-bottom: 40px;
 }
 
-/* GRID */
+
 .energy-service-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-/* CARD */
+
 .energy-card {
     background: #fff;
     padding: 30px 25px;
@@ -275,14 +275,12 @@ nav {
     box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
-/* ICON */
 .energy-icon {
     font-size: 40px;
     color: #00a8ff;
     margin-bottom: 15px;
 }
 
-/* TEXT */
 .energy-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -293,5 +291,173 @@ nav {
     font-size: 15px;
     line-height: 1.7;
     color: #555;
+}
+
+
+/* section installation */
+
+.solar-qa-section {
+  display: flex;
+  padding: 50px 10%;
+  gap: 40px;
+}
+
+.qa-left img {
+  width: 450px;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.qa-right {
+  flex: 1;
+}
+
+.accordion .acc-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.acc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.acc-header h3 {
+  font-size: 18px;
+}
+
+.acc-icon {
+  font-size: 26px;
+  transition: 0.3s;
+}
+
+.acc-content {
+  display: none;
+  margin-top: 10px;
+  line-height: 1.7;
+  padding-right: 15px;
+}
+
+/* section windmill */
+
+.windmill-qa-section {
+  display: flex;
+  padding: 50px 10%;
+  gap: 40px;
+}
+
+.windmill-left {
+  flex: 1;
+}
+
+.windmill-right img {
+  width: 450px;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.accordion .acc-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.acc-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.acc-header h3 {
+  font-size: 18px;
+}
+
+.acc-icon {
+  font-size: 26px;
+  transition: .3s;
+}
+
+.acc-content {
+  display: none;
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+/* section stat */
+
+.energy-timeline-section {
+  display: flex;
+  padding: 70px 10%;
+  gap: 60px;
+}
+
+.et-left {
+  width: 40%;
+  padding-right: 20px;
+  border-right: 2px solid #e0e0e0;
+}
+
+.et-left h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.et-left p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 350px;
+}
+
+.et-right {
+  width: 60%;
+  position: relative;
+}
+
+.et-right::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #ddd;
+}
+
+.et-item {
+  display: flex;
+  position: relative;
+  padding: 25px 0 25px 50px;
+}
+
+.et-dot {
+  width: 16px;
+  height: 16px;
+  background: #ffbe3d;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.15);
+  position: absolute;
+  left: 7px;
+  top: 30px;
+}
+
+.et-content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.et-content p {
+  color: #555;
+  line-height: 1.6;
+  max-width: 500px;
+}
+.et-left img {
+    width: 420px;
+    height: 450px;
 }
 

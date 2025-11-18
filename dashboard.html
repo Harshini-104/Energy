@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href=""><img src="./image/logo-removebg-preview.webp" alt="company logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./error.html">Projects</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./contact.css">Contact</a></li>
+                <a href="./loginin.html"><button class="loginbtn">LogIn</button></a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    
+
+    <!--  -->
+
+    <section class="energy-dashboard">
+
+  <!-- TOP CARDS -->
+  <div class="top-cards">
+
+    <div class="card">
+      <h3>Total Energy Produced</h3>
+      <div class="value">23,400 kWh</div>
+      <span class="sub">Today</span>
+    </div>
+
+    <div class="card">
+      <h3>Solar Output</h3>
+      <div class="value">9,200 kWh</div>
+      <span class="sub">↑ 11% vs yesterday</span>
+    </div>
+
+    <div class="card gauge-card">
+      <h3>Grid Efficiency</h3>
+      <!-- <canvas id="gaugeChart"></canvas> -->
+      <div class="gauge-value">84%</div>
+    </div>
+
+    <div class="card alert-card">
+      <div class="value big">89%</div>
+      <span class="sub">System Health</span>
+    </div>
+
+  </div>
+
+  <!-- LINE CHART -->
+  <div class="line-chart-card">
+    <h3>Energy Output: Solar vs Wind</h3>
+    <canvas id="energyLineChart"></canvas>
+  </div>
+
+  <!-- FEEDBACK + RANKINGS SECTION -->
+  <div class="bottom-section">
+
+    <div class="feedback-card">
+      <h3>Energy Alerts & Logs</h3>
+      <ul>
+        <li>☀ Solar array #2 peak reached — 1 hour ago</li>
+        <li>⚡ Grid load balanced successfully — 1 hour ago</li>
+        <li>🌬 Windmill rotation speed optimal — 3 hours ago</li>
+        <li>🔧 Minor inverter fluctuation detected — 6 hours ago</li>
+        <li>☀ High sunlight detected — 2 days ago</li>
+      </ul>
+    </div>
+
+    <div class="ranking-card">
+      <h3>Top Energy Sources</h3>
+      <table>
+        <tr><th>Source</th><th>kWh</th></tr>
+        <tr><td>Solar Plant A</td><td>3700</td></tr>
+        <tr><td>Wind Farm B</td><td>3400</td></tr>
+        <tr><td>Hydro Station C</td><td>2700</td></tr>
+        <tr><td>Biomass Unit D</td><td>2400</td></tr>
+        <tr><td>Solar Plant E</td><td>2100</td></tr>
+      </table>
+    </div>
+
+    <div class="status-card">
+      <h3>Plant Status</h3>
+      <table>
+        <tr><th>Plant</th><th>Status</th></tr>
+        <tr><td>Solar A</td><td>Online</td></tr>
+        <tr><td>Wind B</td><td>Maintenance</td></tr>
+        <tr><td>Hydro C</td><td>Online</td></tr>
+        <tr><td>Biomass D</td><td>Online</td></tr>
+        <tr><td>Solar E</td><td>Low Output</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- section stat -->
+    <section class="stats-section" data-aos="fade-up">
+        <!-- <h2 class="stats-title">Energy Performance Overview</h2>
+        <p class="stats-sub">Live energy statistics that represent system efficiency and performance.</p> -->
+
+        <div class="stats-container">
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="stat-number" data-target="9850">0</h3>
+                <p class="stat-label">Total Solar Units Generated (kWh)</p>
+            </div>
+
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="stat-number" data-target="120">0</h3>
+                <p class="stat-label">Active Wind Turbines</p>
+            </div>
+
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="stat-number" data-target="87">0</h3>
+                <p class="stat-label">Global Network Efficiency (%)</p>
+            </div>
+
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="stat-number" data-target="1540">0</h3>
+                <p class="stat-label">Total CO₂ Saved (kg)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section graph -->
+
+    <section class="energy-graph-section" data-aos="fade-up">
+        <h2 class="graph-title">Energy Production Graph</h2>
+        <p class="graph-sub">Monthly solar and wind energy output comparison</p>
+
+        <div class="graph-wrapper">
+            <canvas id="energyChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+/* LINE CHART */
+new Chart(document.getElementById("energyLineChart"), {
+  type: "line",
+  data: {
+    labels: ["09:00", "10:00", "11:00", "12:00", "13:00", "15:00"],
+    datasets: [
+      {
+        label: "Solar",
+        data: [15, 20, 11, 22, 28, 30],
+        borderColor: "#29b6f6",
+        fill: false,
+        tension: 0.4
+      },
+      {
+        label: "Wind",
+        data: [10, 18, 12, 15, 26, 24],
+        borderColor: "#ffd600",
+        fill: false,
+        tension: 0.4
+      }
+    ]
+  },
+  options: {
+    plugins: { legend: { labels: { color: "#fff" } } },
+    scales: {
+      x: { ticks: { color: "#fff" } },
+      y: { ticks: { color: "#fff" } }
+    }
+  }
+});
+
+/* GAUGE CHART */
+new Chart(document.getElementById("gaugeChart"), {
+  type: 'doughnut',
+  data: {
+    labels: ["Efficient", "Remaining"],
+    datasets: [{
+      data: [84, 16],
+      backgroundColor: ["#00e676", "#26326a"],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    cutout: '70%',
+    plugins: { legend: { display: false } }
+  }
+});
+</script>
+
+
+    <script>
+const ctx = document.getElementById('energyChart').getContext('2d');
+
+const energyChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: [
+      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+    ],
+
+    datasets: [
+      {
+        label: 'Solar Energy (kWh)',
+        data: [850, 920, 1100, 1400, 1600, 1800, 1750, 1680, 1500, 1300, 980, 860],
+        borderColor: '#df3721',
+        backgroundColor: 'rgba(223,55,33,0.3)',
+        borderWidth: 3,
+        tension: 0.4,
+        fill: true,
+      },
+      {
+        label: 'Wind Energy (kWh)',
+        data: [620, 700, 830, 900, 1100, 1250, 1300, 1200, 1150, 980, 760, 650],
+        borderColor: '#6366f1',
+        backgroundColor: 'rgba(99,102,241,0.3)',
+        borderWidth: 3,
+        tension: 0.4,
+        fill: true,
+      }
+    ]
+  },
+
+  options: {
+    responsive: true,
+
+    plugins: {
+      legend: {
+        position: 'top',
+        labels: {
+          font: { size: 14 }
+        }
+      }
+    },
+
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+</script>
+
+
+    <script>
+        const counters = document.querySelectorAll(".stat-number");
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute("data-target");
+                const speed = 100;
+
+                const update = () => {
+                    const value = +counter.innerText;
+                    const increment = target / speed;
+
+                    if (value < target) {
+                        counter.innerText = Math.ceil(value + increment);
+                        setTimeout(update, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                update();
+            });
+        };
+
+        // Run when visible on screen
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateCounters();
+            }
+        }, { threshold: 0.3 });
+
+        observer.observe(document.querySelector(".stats-section"));
+    </script>
+
+</body>
+
+</html>
