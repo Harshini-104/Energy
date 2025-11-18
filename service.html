@@ -2,464 +2,550 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page 1</title>
-    <link rel="stylesheet" href="./service.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page 1</title>
+  <link rel="stylesheet" href="./service.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
 
-    <!-- header section -->
-    <header class="header">
-        <nav>
-            <div class="logo">
-                <a href=""><img src="./image/logo-removebg-preview.webp" alt="company logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./service.html">Service</a></li>
-                <li><a href="./error.html">Projects</a></li>
-                <li><a href="./dashboard.html">Dashboard</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <a href="./loginin.html"><button class="loginbtn">LogIn</button></a>
-            </ul>
-            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
-        </nav>
-    </header>
+  <!-- header section -->
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href=""><img src="./image/logo-removebg-preview.webp" alt="company logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Service</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <a href="./loginin.html"><button class="loginbtn">LogIn</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
 
 
-    <!-- section hero -->
+  <!-- section hero -->
 
-    <section class="service-hero">
-        <div class="service-hero-overlay">
-            <div class="service-hero-content">
-                <h5>OUR SERVICES</h5>
-                <h1>Innovative Renewable Energy Solutions</h1>
-                <a href="./index.html" class="service-btn">Home</a>
-            </div>
+  <section class="service-hero">
+    <div class="service-hero-overlay">
+      <div class="service-hero-content">
+        <h5>OUR SERVICES</h5>
+        <h1>Innovative Renewable Energy Solutions</h1>
+        <a href="./index.html" class="service-btn">Home</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section services -->
+
+  <section class="service-feature">
+    <div class="service-wrapper">
+
+      <!-- LEFT SIDE LIST -->
+      <ul class="service-list">
+        <li data-img="./image/about.webp"
+          data-desc="Our Solar Panel Installation service delivers high-efficiency photovoltaic systems designed for long-term reliability. We handle everything from site assessment and system design to installation and performance monitoring, ensuring maximum energy output and reduced utility bills for homes, businesses, and industries.">
+          Solar Panel Installation
+        </li>
+
+        <li data-img="./image/windmill instalation.webp"
+          data-desc="Our Windmill Installation solutions provide sustainable, large-scale energy generation using advanced turbine technology. We offer full project planning, structural setup, environmental assessment, and maintenance support to ensure strong and consistent wind energy production for communities and industrial zones.">
+          Windmill Installation
+        </li>
+
+        <li data-img="./image/global.webp"
+          data-desc="The Global Energy Network connects regions and countries through intelligent power distribution systems. We work on smart grid development, cross-border energy routing, and load balancing to ensure stable, reliable, and eco-friendly power availability worldwide.">
+          Global Energy Network
+        </li>
+
+        <li data-img="./image/sun.webp"
+          data-desc="Sun Energy Analytics helps organizations maximize solar output using real-time tracking, predictive insights, and consumption patterns. Our analysis tools allow customers to evaluate efficiency, identify wastage, and optimize solar performance for long-term sustainability.">
+          Sun Energy Analytics
+        </li>
+
+        <li data-img="./image/powerlines.webp"
+          data-desc="Our Technological Power Lines integrate modern engineering to ensure faster, safer, and loss-free energy transmission. Using high-strength materials and advanced safety protocols, we create power networks that support modern infrastructure and future renewable expansion.">
+          Technological Power Lines
+        </li>
+
+        <li data-img="./image/economical.webp"
+          data-desc="Economical Lighting focuses on delivering cost-saving LED and solar-powered lighting systems. We design energy-efficient solutions for homes, offices, streets, and commercial spaces to drastically reduce electricity use while maintaining excellent brightness and durability.">
+          Economical Lighting
+        </li>
+
+        <li data-img="./image/repair.webp"
+          data-desc="Our Support and Repair team provides 24/7 assistance for all renewable energy installations. From troubleshooting and part replacement to performance checks and emergency repairs, we ensure your energy systems operate safely and efficiently at all times.">
+          Support and Repair
+        </li>
+
+        <li data-img="./image/recycle.webp"
+          data-desc="Recycling Excess Energy allows users to store and reuse unused power using advanced battery systems and energy conversion methods. This reduces wastage, ensures energy availability during peak hours, and supports a more sustainable and efficient power lifestyle.">
+          Recycling Excess Energy
+        </li>
+      </ul>
+
+
+      <!-- RIGHT SIDE IMAGE -->
+      <div class="service-image-box">
+        <img id="service-image" src="./image/solar and wind.webp" alt="Service Image">
+        <div class="service-hover-text" id="hover-text">
+          We install high-efficiency solar panels for homes and businesses.
         </div>
-    </section>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section providers -->
+
+  <section class="energy-services" id="solutions">
+    <div class="energy-container">
+      <h2 class="energy-title">Our Renewable Energy Solutions</h2>
+      <p class="energy-subtitle">
+        We offer advanced, eco-friendly energy services designed to power homes, businesses, and communities.
+      </p>
+
+      <div class="energy-service-grid">
+
+        <!-- Service 1 -->
+        <div class="energy-card">
+          <div class="energy-icon"><i class="fas fa-solar-panel"></i></div>
+          <h3>Solar Power Systems</h3>
+          <p>High-efficiency solar panel installation for commercial and residential spaces, ensuring maximum energy
+            output.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="energy-card">
+          <div class="energy-icon"><i class="fas fa-wind"></i></div>
+          <h3>Wind Energy Solutions</h3>
+          <p>Sustainable wind turbine setup with full project planning, engineering, and performance monitoring.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="energy-card">
+          <div class="energy-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Smart Energy Grids</h3>
+          <p>Modern smart-grid infrastructure for improved energy flow, load balancing, and zero-waste distribution.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="energy-card">
+          <div class="energy-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Energy Efficiency</h3>
+          <p>Eco-friendly LED systems and low-consumption appliances designed to cut power usage and save costs.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="energy-card">
+          <div class="energy-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Energy Analytics</h3>
+          <p>Real-time monitoring and analytics tools to track consumption, improve performance, and minimize waste.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="energy-card">
+          <div class="energy-icon"><i class="fas fa-tools"></i></div>
+          <h3>Repair & Maintenance</h3>
+          <p>24/7 professional maintenance, system repairs, and technical support for uninterrupted energy usage.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
-    <!-- section services -->
+  <!-- section installation -->
 
-    <section class="service-feature">
-        <div class="service-wrapper">
+  <section class="solar-qa-section">
+    <div class="qa-left">
+      <img src="./image/solar.installation.webp" alt="Solar Services">
+    </div>
 
-            <!-- LEFT SIDE LIST -->
-            <ul class="service-list">
-                <li data-img="./image/about.webp"
-                    data-desc="Our Solar Panel Installation service delivers high-efficiency photovoltaic systems designed for long-term reliability. We handle everything from site assessment and system design to installation and performance monitoring, ensuring maximum energy output and reduced utility bills for homes, businesses, and industries.">
-                    Solar Panel Installation
-                </li>
+    <div class="qa-right">
+      <h2>Solar Panel Installation</h2>
 
-                <li data-img="./image/windmill instalation.webp"
-                    data-desc="Our Windmill Installation solutions provide sustainable, large-scale energy generation using advanced turbine technology. We offer full project planning, structural setup, environmental assessment, and maintenance support to ensure strong and consistent wind energy production for communities and industrial zones.">
-                    Windmill Installation
-                </li>
+      <div class="accordion">
 
-                <li data-img="./image/global.webp"
-                    data-desc="The Global Energy Network connects regions and countries through intelligent power distribution systems. We work on smart grid development, cross-border energy routing, and load balancing to ensure stable, reliable, and eco-friendly power availability worldwide.">
-                    Global Energy Network
-                </li>
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <h3>What is included in Solar Panel Installation?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Professional installation includes site inspection, load calculation, panel mounting, wiring setup, and
+            inverter configuration to ensure maximum energy efficiency.
+          </p>
+        </div>
 
-                <li data-img="./image/sun.webp"
-                    data-desc="Sun Energy Analytics helps organizations maximize solar output using real-time tracking, predictive insights, and consumption patterns. Our analysis tools allow customers to evaluate efficiency, identify wastage, and optimize solar performance for long-term sustainability.">
-                    Sun Energy Analytics
-                </li>
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <h3>What is Solar System Design?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Solar system design involves energy analysis, shading study, panel layout creation, inverter selection, and
+            overall system optimization for best performance.
+          </p>
+        </div>
 
-                <li data-img="./image/powerlines.webp"
-                    data-desc="Our Technological Power Lines integrate modern engineering to ensure faster, safer, and loss-free energy transmission. Using high-strength materials and advanced safety protocols, we create power networks that support modern infrastructure and future renewable expansion.">
-                    Technological Power Lines
-                </li>
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <h3>How does Solar Maintenance work?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Maintenance includes periodic cleaning, output checks, inverter inspections, and ensuring all connections
+            are secure for smooth energy generation.
+          </p>
+        </div>
 
-                <li data-img="./image/economical.webp"
-                    data-desc="Economical Lighting focuses on delivering cost-saving LED and solar-powered lighting systems. We design energy-efficient solutions for homes, offices, streets, and commercial spaces to drastically reduce electricity use while maintaining excellent brightness and durability.">
-                    Economical Lighting
-                </li>
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <h3>Do solar panels need regular repairs?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Repairs may be required for damaged panels, broken wiring, loose mounts, or inverter failures. Early
+            detection helps avoid power loss.
+          </p>
+        </div>
 
-                <li data-img="./image/repair.webp"
-                    data-desc="Our Support and Repair team provides 24/7 assistance for all renewable energy installations. From troubleshooting and part replacement to performance checks and emergency repairs, we ensure your energy systems operate safely and efficiently at all times.">
-                    Support and Repair
-                </li>
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <h3>How long does a solar installation take?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            A standard residential installation usually takes 1-3 days, including mounting, electrical setup, and system
+            testing.
+          </p>
+        </div>
 
-                <li data-img="./image/recycle.webp"
-                    data-desc="Recycling Excess Energy allows users to store and reuse unused power using advanced battery systems and energy conversion methods. This reduces wastage, ensures energy availability during peak hours, and supports a more sustainable and efficient power lifestyle.">
-                    Recycling Excess Energy
-                </li>
-            </ul>
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <h3>What is the life span of solar panels?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Most solar panels last 25-30 years with proper maintenance, retaining around 80–90% efficiency over their
+            lifetime.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
-            <!-- RIGHT SIDE IMAGE -->
-            <div class="service-image-box">
-                <img id="service-image" src="./image/solar and wind.webp" alt="Service Image">
-                <div class="service-hover-text" id="hover-text">
-                    We install high-efficiency solar panels for homes and businesses.
+  <!-- section windmill -->
+
+  <section class="windmill-qa-section">
+
+    <div class="windmill-left">
+      <h2>Windmill Installation</h2>
+
+      <div class="accordion">
+
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this, 0)">
+            <h3>What is included in a windmill installation?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Windmill installation includes site selection, soil testing, foundation building, tower erection, turbine
+            mounting, and complete electrical integration.
+          </p>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this, 1)">
+            <h3>How does a wind turbine generate electricity?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Wind rotates the turbine blades, converting kinetic energy into mechanical energy. This mechanical energy is
+            converted into electrical power by the generator.
+          </p>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this, 2)">
+            <h3>What maintenance is required for wind turbines?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Maintenance includes blade inspection, lubrication of moving parts, checking gearbox health, monitoring
+            generator output, and tower safety checks.
+          </p>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this, 3)">
+            <h3>How long does a windmill installation take?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Installation can take 3-7 days depending on tower height, weather conditions, site access, and foundation
+            curing time.
+          </p>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this, 4)">
+            <h3>What is the lifespan of a wind turbine?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Modern wind turbines last 20-25 years with regular servicing and proper monitoring of mechanical components.
+          </p>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this, 5)">
+            <h3>Is wind energy suitable for all locations?</h3>
+            <span class="acc-icon">+</span>
+          </div>
+          <p class="acc-content">
+            Wind energy works best in high-wind zones, open land, coastal areas, and elevated hills where wind flow is
+            consistent and unobstructed.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="windmill-right">
+      <img id="windmill-image" src="./image/windmill instalation.webp" alt="Windmill Installation">
+    </div>
+
+  </section>
+
+  <!-- section stat -->
+
+  <section class="energy-timeline-section">
+
+    <div class="et-left">
+      <h2>Energy Services We Provide</h2>
+      <p>
+        We deliver end-to-end clean energy solutions that ensure sustainability, efficiency,
+        and long-term reliability for homes and businesses.
+      </p>
+
+      <img src="./image/windmillet.webp" alt="">
+    </div>
+
+    <div class="et-right">
+
+      <div class="et-item">
+        <div class="et-dot"></div>
+        <div class="et-content">
+          <h3>Solar Panel Installation</h3>
+          <p>Complete solar integration including assessment, panel fixing, wiring & inverter setup.</p>
+        </div>
+      </div>
+
+      <div class="et-item">
+        <div class="et-dot"></div>
+        <div class="et-content">
+          <h3>Windmill Installation</h3>
+          <p>Professional wind turbine installation with foundation construction and tower fitting.</p>
+        </div>
+      </div>
+
+      <div class="et-item">
+        <div class="et-dot"></div>
+        <div class="et-content">
+          <h3>Energy-Efficient Lighting</h3>
+          <p>Smart LED & industrial lighting systems designed to reduce energy usage.</p>
+        </div>
+      </div>
+
+      <div class="et-item">
+        <div class="et-dot"></div>
+        <div class="et-content">
+          <h3>Energy Recycling Systems</h3>
+          <p>Recycle excess or unused energy back into your grid for improved sustainability.</p>
+        </div>
+      </div>
+
+      <div class="et-item">
+        <div class="et-dot"></div>
+        <div class="et-content">
+          <h3>Support & Repairs</h3>
+          <p>Maintenance, system inspection, turbine/solar repairs & technical assistance.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+
+           
+            <div class="footer-about">
+                <img src="./image/logo-removebg-preview.webp" alt="Energy Logo" class="comlogo">
+                <p>
+                    Delivering powerful solar, wind, and renewable energy solutions for a greener and
+                    sustainable future. We innovate to energize communities and industries worldwide.
+                </p>
+            </div>
+
+           
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-support">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="./about.html#team">Team</a></li>
+                    <li><a href="./about.html#ener">Energy</a></li>
+                    <li><a href="./service.html#solutions">Energy Solutions</a></li>
+                    <li><a href="./index.html#gallery">Gallery</a></li>
+                    <li><a href="./about.html#work">How We Work</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> support@energy.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Address:</strong> 45 Green Power Street, Chennai, India</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
 
         </div>
-    </section>
 
-    <!-- section providers -->
-
-    <section class="energy-services">
-    <div class="energy-container">
-        <h2 class="energy-title">Our Renewable Energy Solutions</h2>
-        <p class="energy-subtitle">
-            We offer advanced, eco-friendly energy services designed to power homes, businesses, and communities.
-        </p>
-
-        <div class="energy-service-grid">
-
-            <!-- Service 1 -->
-            <div class="energy-card">
-                <div class="energy-icon"><i class="fas fa-solar-panel"></i></div>
-                <h3>Solar Power Systems</h3>
-                <p>High-efficiency solar panel installation for commercial and residential spaces, ensuring maximum energy output.</p>
-            </div>
-
-            <!-- Service 2 -->
-            <div class="energy-card">
-                <div class="energy-icon"><i class="fas fa-wind"></i></div>
-                <h3>Wind Energy Solutions</h3>
-                <p>Sustainable wind turbine setup with full project planning, engineering, and performance monitoring.</p>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="energy-card">
-                <div class="energy-icon"><i class="fas fa-network-wired"></i></div>
-                <h3>Smart Energy Grids</h3>
-                <p>Modern smart-grid infrastructure for improved energy flow, load balancing, and zero-waste distribution.</p>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="energy-card">
-                <div class="energy-icon"><i class="fas fa-lightbulb"></i></div>
-                <h3>Energy Efficiency</h3>
-                <p>Eco-friendly LED systems and low-consumption appliances designed to cut power usage and save costs.</p>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="energy-card">
-                <div class="energy-icon"><i class="fas fa-chart-line"></i></div>
-                <h3>Energy Analytics</h3>
-                <p>Real-time monitoring and analytics tools to track consumption, improve performance, and minimize waste.</p>
-            </div>
-
-            <!-- Service 6 -->
-            <div class="energy-card">
-                <div class="energy-icon"><i class="fas fa-tools"></i></div>
-                <h3>Repair & Maintenance</h3>
-                <p>24/7 professional maintenance, system repairs, and technical support for uninterrupted energy usage.</p>
-            </div>
-
+        <div class="footer-bottom">
+            <p>© 2025 Energy Power Solutions. All Rights Reserved.</p>
         </div>
-    </div>
-</section>
+    </footer>
 
 
-<!-- section installation -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".nav-links");
+      const icon = document.querySelector(".menu-icon i");
 
-<section class="solar-qa-section">
-  <div class="qa-left">
-    <img src="./image/solar.installation.webp" alt="Solar Services">
-  </div>
+      menu.classList.toggle("open");
 
-  <div class="qa-right">
-    <h2>Solar Panel Installation</h2>
+      // Change icon
+      if (menu.classList.contains("open")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+      } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+      }
+    }
+  </script>
 
-    <div class="accordion">
-      
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
-          <h3>What is included in Solar Panel Installation?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Professional installation includes site inspection, load calculation, panel mounting, wiring setup, and inverter configuration to ensure maximum energy efficiency.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
-          <h3>What is Solar System Design?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Solar system design involves energy analysis, shading study, panel layout creation, inverter selection, and overall system optimization for best performance.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
-          <h3>How does Solar Maintenance work?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Maintenance includes periodic cleaning, output checks, inverter inspections, and ensuring all connections are secure for smooth energy generation.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
-          <h3>Do solar panels need regular repairs?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Repairs may be required for damaged panels, broken wiring, loose mounts, or inverter failures. Early detection helps avoid power loss.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
-          <h3>How long does a solar installation take?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          A standard residential installation usually takes 1-3 days, including mounting, electrical setup, and system testing.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
-          <h3>What is the life span of solar panels?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Most solar panels last 25-30 years with proper maintenance, retaining around 80–90% efficiency over their lifetime.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- section windmill -->
-
-<section class="windmill-qa-section">
-
-  <div class="windmill-left">
-    <h2>Windmill Installation – Q & A</h2>
-
-    <div class="accordion">
-      
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this, 0)">
-          <h3>What is included in a windmill installation?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Windmill installation includes site selection, soil testing, foundation building, tower erection, turbine mounting, and complete electrical integration.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this, 1)">
-          <h3>How does a wind turbine generate electricity?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Wind rotates the turbine blades, converting kinetic energy into mechanical energy. This mechanical energy is converted into electrical power by the generator.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this, 2)">
-          <h3>What maintenance is required for wind turbines?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Maintenance includes blade inspection, lubrication of moving parts, checking gearbox health, monitoring generator output, and tower safety checks.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this, 3)">
-          <h3>How long does a windmill installation take?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Installation can take 3-7 days depending on tower height, weather conditions, site access, and foundation curing time.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this, 4)">
-          <h3>What is the lifespan of a wind turbine?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Modern wind turbines last 20-25 years with regular servicing and proper monitoring of mechanical components.
-        </p>
-      </div>
-
-      <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this, 5)">
-          <h3>Is wind energy suitable for all locations?</h3>
-          <span class="acc-icon">+</span>
-        </div>
-        <p class="acc-content">
-          Wind energy works best in high-wind zones, open land, coastal areas, and elevated hills where wind flow is consistent and unobstructed.
-        </p>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="windmill-right">
-    <img id="windmill-image" src="./image/windmill instalation.webp" alt="Windmill Installation">
-  </div>
-
-</section>
-
-<!-- section stat -->
-
-<section class="energy-timeline-section">
-
-  <div class="et-left">
-    <h2>Energy Services We Provide</h2>
-    <p>
-      We deliver end-to-end clean energy solutions that ensure sustainability, efficiency, 
-      and long-term reliability for homes and businesses.
-    </p>
-
-    <img src="./image/windmillet.webp" alt="">
-  </div>
-
-  <div class="et-right">
-
-    <div class="et-item">
-      <div class="et-dot"></div>
-      <div class="et-content">
-        <h3>Solar Panel Installation</h3>
-        <p>Complete solar integration including assessment, panel fixing, wiring & inverter setup.</p>
-      </div>
-    </div>
-
-    <div class="et-item">
-      <div class="et-dot"></div>
-      <div class="et-content">
-        <h3>Windmill Installation</h3>
-        <p>Professional wind turbine installation with foundation construction and tower fitting.</p>
-      </div>
-    </div>
-
-    <div class="et-item">
-      <div class="et-dot"></div>
-      <div class="et-content">
-        <h3>Energy-Efficient Lighting</h3>
-        <p>Smart LED & industrial lighting systems designed to reduce energy usage.</p>
-      </div>
-    </div>
-
-    <div class="et-item">
-      <div class="et-dot"></div>
-      <div class="et-content">
-        <h3>Energy Recycling Systems</h3>
-        <p>Recycle excess or unused energy back into your grid for improved sustainability.</p>
-      </div>
-    </div>
-
-    <div class="et-item">
-      <div class="et-dot"></div>
-      <div class="et-content">
-        <h3>Support & Repairs</h3>
-        <p>Maintenance, system inspection, turbine/solar repairs & technical assistance.</p>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-
-<script>
+  <script>
     function toggleAcc(element) {
-  const allContents = document.querySelectorAll(".acc-content");
-  const allIcons = document.querySelectorAll(".acc-icon");
+      const allContents = document.querySelectorAll(".acc-content");
+      const allIcons = document.querySelectorAll(".acc-icon");
 
-  const content = element.nextElementSibling;
-  const icon = element.querySelector(".acc-icon");
+      const content = element.nextElementSibling;
+      const icon = element.querySelector(".acc-icon");
 
-  // Close all answers first
-  allContents.forEach(c => c.style.display = "none");
-  allIcons.forEach(i => i.textContent = "+");
+      // Close all answers first
+      allContents.forEach(c => c.style.display = "none");
+      allIcons.forEach(i => i.textContent = "+");
 
-  // If the clicked one is not already open → open it
-  if (content.style.display !== "block") {
-    content.style.display = "block";
-    icon.textContent = "-";
-  }
-}
-
-
-function toggleAcc(element, index) {
-  const allContents = document.querySelectorAll(".acc-content");
-  const allIcons = document.querySelectorAll(".acc-icon");
-
-  const content = element.nextElementSibling;
-  const icon = element.querySelector(".acc-icon");
-
-  // Close all first
-  allContents.forEach(c => c.style.display = "none");
-  allIcons.forEach(i => i.textContent = "+");
-
-  // Open selected
-  content.style.display = "block";
-  icon.textContent = "-";
-
-  // Change image
-  document.getElementById("windmill-image").src = windmillImages[index];
-}
+      // If the clicked one is not already open → open it
+      if (content.style.display !== "block") {
+        content.style.display = "block";
+        icon.textContent = "-";
+      }
+    }
 
 
-</script>
+    function toggleAcc(element, index) {
+      const allContents = document.querySelectorAll(".acc-content");
+      const allIcons = document.querySelectorAll(".acc-icon");
+
+      const content = element.nextElementSibling;
+      const icon = element.querySelector(".acc-icon");
+
+      // Close all first
+      allContents.forEach(c => c.style.display = "none");
+      allIcons.forEach(i => i.textContent = "+");
+
+      // Open selected
+      content.style.display = "block";
+      icon.textContent = "-";
+
+      // Change image
+      document.getElementById("windmill-image").src = windmillImages[index];
+    }
+
+
+  </script>
 
 
 
-    <script>
-        const listItems = document.querySelectorAll(".service-list li");
-        const serviceImage = document.getElementById("service-image");
-        const hoverText = document.getElementById("hover-text");
+  <script>
+    const listItems = document.querySelectorAll(".service-list li");
+    const serviceImage = document.getElementById("service-image");
+    const hoverText = document.getElementById("hover-text");
 
-        // Set default active
-        listItems[0].classList.add("active");
+    // Set default active
+    listItems[0].classList.add("active");
 
-        listItems.forEach((item) => {
-            item.addEventListener("click", () => {
+    listItems.forEach((item) => {
+      item.addEventListener("click", () => {
 
-                // remove active class from others
-                listItems.forEach(li => li.classList.remove("active"));
-                item.classList.add("active");
+        // remove active class from others
+        listItems.forEach(li => li.classList.remove("active"));
+        item.classList.add("active");
 
-                // change image
-                const newImg = item.getAttribute("data-img");
-                serviceImage.src = newImg;
+        // change image
+        const newImg = item.getAttribute("data-img");
+        serviceImage.src = newImg;
 
-                // change hover text
-                const description = item.getAttribute("data-desc");
-                hoverText.innerText = description;
-            });
-        });
+        // change hover text
+        const description = item.getAttribute("data-desc");
+        hoverText.innerText = description;
+      });
+    });
 
-    </script>
+  </script>
 </body>

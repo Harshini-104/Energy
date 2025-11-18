@@ -159,6 +159,7 @@ nav {
 }
 
 
+
 /* section services */
 
 .service-feature {
@@ -227,72 +228,214 @@ nav {
     opacity: 1;
 }
 
+@media (max-width: 992px) {
+    .service-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-list li {
+        font-size: 17px;
+        padding: 12px 10px;
+    }
+
+    .service-image-box img {
+        height: 380px;
+    }
+
+    .service-hover-text {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .service-feature {
+        padding: 40px 15px;
+    }
+
+    .service-list li {
+        font-size: 16px;
+        padding: 10px 8px;
+    }
+
+    .service-image-box img {
+        height: 320px;
+    }
+
+    .service-hover-text {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .service-wrapper {
+        gap: 20px;
+    }
+
+    .service-list li {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .service-image-box img {
+        height: 250px;
+    }
+
+    .service-hover-text {
+        font-size: 13px;
+        padding: 12px;
+    }
+    }
+   
 
 /* section providers */
 
 .energy-services {
-    padding: 80px 20px;
-    background: #f4f8fc;
+  padding: 80px 20px;
+  background: #f4f8fc;
 }
 
 .energy-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .energy-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #0a3d62;
-    margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0a3d62;
+  margin-bottom: 10px;
 }
 
 .energy-subtitle {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
 }
 
 
 .energy-service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 
 .energy-card {
-    background: #fff;
-    padding: 30px 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
 }
 
 .energy-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
 .energy-icon {
-    font-size: 40px;
-    color: #00a8ff;
-    margin-bottom: 15px;
+  font-size: 40px;
+  color: #00a8ff;
+  margin-bottom: 15px;
 }
 
 .energy-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #0a3d62;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0a3d62;
 }
 
 .energy-card p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
 }
 
+/* Tablet – below 992px */
+@media (max-width: 992px) {
+    .energy-title {
+        font-size: 32px;
+    }
+
+    .energy-subtitle {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .energy-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .energy-card {
+        padding: 25px 20px;
+    }
+
+    .energy-icon {
+        font-size: 36px;
+    }
+}
+
+/* Mobile – below 768px */
+@media (max-width: 768px) {
+    .energy-services {
+        padding: 60px 15px;
+    }
+
+    .energy-title {
+        font-size: 28px;
+    }
+
+    .energy-subtitle {
+        font-size: 16px;
+    }
+
+    .energy-service-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .energy-card {
+        padding: 22px 18px;
+    }
+
+    .energy-card h3 {
+        font-size: 18px;
+    }
+
+    .energy-card p {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile – below 480px */
+@media (max-width: 480px) {
+    .energy-title {
+        font-size: 24px;
+    }
+
+    .energy-subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .energy-card {
+        padding: 18px 15px;
+    }
+
+    .energy-icon {
+        font-size: 32px;
+    }
+
+    .energy-card h3 {
+        font-size: 17px;
+    }
+}
 
 /* section installation */
 
@@ -341,6 +484,52 @@ nav {
   padding-right: 15px;
 }
 
+@media (max-width: 992px) {
+  .solar-qa-section {
+    padding: 40px 5%;
+    gap: 25px;
+  }
+
+  .qa-left img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .solar-qa-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .qa-left img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .qa-right {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .qa-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .acc-header h3 {
+    font-size: 16px;
+  }
+
+  .acc-icon {
+    font-size: 22px;
+  }
+}
+
 /* section windmill */
 
 .windmill-qa-section {
@@ -385,6 +574,55 @@ nav {
   margin-top: 10px;
   line-height: 1.7;
 }
+
+
+@media (max-width: 992px) {
+  .windmill-qa-section {
+    padding: 40px 6%;
+    gap: 30px;
+  }
+
+  .windmill-right img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .windmill-qa-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .windmill-left {
+    width: 100%;
+  }
+
+  .windmill-right img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .acc-header h3 {
+    font-size: 16px;
+  }
+
+  .acc-icon {
+    font-size: 22px;
+  }
+
+  .windmill-right img {
+    width: 100%;
+  }
+}
+
+
 
 /* section stat */
 
@@ -461,3 +699,208 @@ nav {
     height: 450px;
 }
 
+
+@media (max-width: 992px) {
+  .energy-timeline-section {
+    padding: 50px 6%;
+    gap: 40px;
+  }
+
+  .et-left {
+    width: 45%;
+    padding-right: 15px;
+  }
+
+  .et-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .et-right {
+    width: 55%;
+  }
+
+  .et-content h3 {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .energy-timeline-section {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .et-left {
+    width: 100%;
+    padding-right: 0;
+    border-right: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .et-left img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .et-right {
+    width: 100%;
+  }
+
+  .et-right::before {
+    left: 10px;
+  }
+
+  .et-item {
+    padding: 25px 0 25px 40px;
+  }
+
+  .et-dot {
+    left: 1px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .et-left h2 {
+    font-size: 26px;
+  }
+
+  .et-left p {
+    font-size: 15px;
+  }
+
+  .et-content h3 {
+    font-size: 17px;
+  }
+
+  .et-item {
+    padding-left: 35px;
+  }
+
+  .et-dot {
+    width: 13px;
+    height: 13px;
+    left: 0;
+  }
+}
+
+/* footer section */
+
+
+.footer {
+    background: url(./image/footer.webp) no-repeat center center/cover fixed;
+    color: #d8e2f3;
+    padding: 50px 0 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.footer-about {
+    flex: 1.2;
+    min-width: 250px;
+}
+
+.comlogo {
+    width: 170px;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-about p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #c6d4ea;
+}
+
+
+.footer-links,
+.footer-support,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4,
+.footer-support h4,
+.footer-contact h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #5ac8ff;
+}
+
+.footer-links ul,
+.footer-support ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-support ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a,
+.footer-support ul li a {
+    text-decoration: none;
+    color: #c8d3e2;
+    font-size: 15px;
+}
+
+.footer-links ul li a:hover,
+.footer-support ul li a:hover {
+    color: #5ac8ff;
+}
+
+
+.footer-contact p {
+    margin: 8px 0;
+    color: #cfd9ed;
+}
+
+.social-icons a {
+    margin-right: 12px;
+    color: #5ac8ff;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    color: #97e1ff;
+}
+
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #1c2a44;
+    padding-top: 12px;
+}
+
+.footer-bottom p {
+    color: #a8b7d4;
+    font-size: 14px;
+}
+
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .social-icons a {
+        margin: 0 8px;
+    }
+}

@@ -34,7 +34,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./service.html">Service</a></li>
-                <li><a href="./error.html">Projects</a></li>
+                <li><a href="./project.html">Projects</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="./contact.html">Contact</a></li>
                 <a href="./loginin.html"><button class="loginbtn">LogIn</button></a>
@@ -59,7 +59,7 @@
 
     <!-- section main -->
 
-    <section class="about-main">
+    <section class="about-main" id="">
         <div class="about-container">
 
             <!-- Left Content -->
@@ -106,9 +106,9 @@
 
     <!-- section statistics -->
 
-    <div class="energy-stats-section">
-        <div class="energy-stats-overlay">
-            <div class="energy-stats-container">
+    <div class="energysection">
+        <div class="energyoverlay">
+            <div class="energycontainer">
 
                 <div class="energy-stat stat-one">
                     <h3 class="energy-counter" data-target="1500">0</h3>
@@ -140,7 +140,7 @@
     <div class="aboutcontainer">
 
         <!-- Left Side: Content -->
-        <div class="aboutcontent">
+        <div class="aboutcontent" id="ener">
             <h5>ABOUT ENERGY</h5>
             <h2>Powering a Sustainable Future</h2>
             <h3><span class="highlight">10+</span> Years of Excellence in Renewable Energy</h3>
@@ -169,9 +169,9 @@
 
     <!-- section team -->
 
+    
 
-
-    <section class="team-section">
+    <section class="team-section" id="team">
         <h2>Our Team</h2>
         <div class="team-container">
 
@@ -331,43 +331,120 @@
         </div>
     </section>
 
+     <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+
+           
+            <div class="footer-about">
+                <img src="./image/logo-removebg-preview.webp" alt="Energy Logo" class="comlogo">
+                <p>
+                    Delivering powerful solar, wind, and renewable energy solutions for a greener and
+                    sustainable future. We innovate to energize communities and industries worldwide.
+                </p>
+            </div>
+
+           
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-support">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="./about.html#team">Team</a></li>
+                    <li><a href="./about.html#ener">Energy</a></li>
+                    <li><a href="./service.html#solutions">Energy Solutions</a></li>
+                    <li><a href="./index.html#gallery">Gallery</a></li>
+                    <li><a href="./about.html#work">How We Work</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> support@energy.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Address:</strong> 45 Green Power Street, Chennai, India</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Energy Power Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const counters = document.querySelectorAll('.energy-counter');
-            const speed = 200; // lower = faster
+    let started = false;
 
-            const runCounters = () => {
-                counters.forEach(counter => {
-                    if (!counter.dataset.started && isInViewport(counter)) {
-                        counter.dataset.started = "true";
-                        const updateCount = () => {
-                            const target = +counter.getAttribute('data-target');
-                            const count = +counter.innerText;
-                            const increment = Math.ceil(target / speed);
+    function startCounter() {
+        const counters = document.querySelectorAll(".energy-counter");
 
-                            if (count < target) {
-                                counter.innerText = count + increment;
-                                setTimeout(updateCount, 20);
-                            } else {
-                                counter.innerText = target;
-                            }
-                        };
-                        updateCount();
-                    }
-                });
+        counters.forEach(counter => {
+            const target = +counter.getAttribute("data-target");
+            const speed = 50;
+
+            const updateCount = () => {
+                const count = +counter.innerText;
+                const increment = Math.ceil(target / 100);
+
+                if (count < target) {
+                    counter.innerText = count + increment;
+                    setTimeout(updateCount, speed);
+                } else {
+                    counter.innerText = target;
+                }
             };
 
-            const isInViewport = (element) => {
-                const rect = element.getBoundingClientRect();
-                return rect.top <= window.innerHeight && rect.bottom >= 0;
-            };
-
-            window.addEventListener('scroll', runCounters);
-            window.addEventListener('load', runCounters);
+            updateCount();
         });
+    }
 
+    // Detect scroll to section
+    window.addEventListener("scroll", function () {
+        const section = document.querySelector(".energysection");
+        const top = section.getBoundingClientRect().top;
+
+        if (!started && top < window.innerHeight - 100) {
+            startCounter();
+            started = true;
+        }
+    });
+</script>
+
+<script>
+        function toggleMenu() {
+            const menu = document.querySelector(".nav-links");
+            const icon = document.querySelector(".menu-icon i");
+
+            menu.classList.toggle("open");
+
+            // Change icon
+            if (menu.classList.contains("open")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        }
     </script>
 
 </body>

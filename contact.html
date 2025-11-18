@@ -20,7 +20,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./service.html">Service</a></li>
-                <li><a href="./error.html">Projects</a></li>
+                <li><a href="./project.html">Projects</a></li>
                 <li><a href="./dashboard.html">Dashboard</a></li>
                 <li><a href="./contact.html">Contact</a></li>
                 <a href="./loginin.html"><button class="loginbtn">LogIn</button></a>
@@ -89,18 +89,18 @@
               <input type="text" name="name" placeholder="Your Name" required data-aos="fade-up">
               <input type="email" name="email" placeholder="Your Email" required data-aos="fade-up">
             </div>
-            <input type="text" name="subject" placeholder="Subject" required data-aos="fade-up">
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea data-aos="fade-up">
+              <input type="text" name="subject" placeholder="Subject" required data-aos="fade-up">
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea data-aos="fade-up">
                         <a href="./error.html"><button type="submit" class="send-btn">Send Message</button></a>
-                    </form>
-                </div>
-
-            </div>
+          </form>
+          
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
 
-  <!-- section map -->
+<!-- section map -->
 
 
     <section class="map">
@@ -114,6 +114,25 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".nav-links");
+            const icon = document.querySelector(".menu-icon i");
+
+            menu.classList.toggle("open");
+
+            // Change icon
+            if (menu.classList.contains("open")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        }
+    </script>
+
 
 </body>
 </html>

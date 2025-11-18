@@ -51,6 +51,7 @@ nav {
     display: none;
     font-size: 28px;
     cursor: pointer;
+    color: white;
 }
 
 
@@ -227,11 +228,134 @@ nav {
     object-fit: cover;
 }
 
+
+@media (max-width: 992px) {
+
+    .about-main {
+        padding: 70px 6%;
+    }
+
+    .about-container {
+        gap: 40px;
+    }
+
+    .about-main-content h2 {
+        font-size: 36px;
+    }
+
+    .about-main-content p {
+        font-size: 16px;
+    }
+
+    .about-main-img img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .about-stats {
+        gap: 20px;
+    }
+
+    .stat-box {
+        min-width: 110px;
+        padding: 18px;
+    }
+
+    .stat-box h3 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .about-main {
+        padding: 60px 5%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-main-content {
+        order: 2;
+    }
+
+    .about-main-img {
+        order: 1;
+        justify-content: center;
+    }
+
+    .about-main-img img {
+        max-width: 500px;
+        height: 350px;
+    }
+
+    .about-main-content h2 {
+        font-size: 32px;
+    }
+
+    .about-main-content p {
+        max-width: 100%;
+    }
+
+    .about-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stat-box {
+        min-width: 140px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .about-main {
+        padding: 50px 20px;
+    }
+
+    .about-container {
+        gap: 30px;
+    }
+
+    .about-main-content h2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .about-main-content p {
+        font-size: 15px;
+    }
+
+    .about-main-img img {
+        width: 100%;
+        height: 280px;
+        border-radius: 12px;
+    }
+
+    .about-stats {
+        gap: 15px;
+    }
+
+    .stat-box {
+        min-width: 120px;
+        padding: 15px;
+    }
+
+    .stat-box h3 {
+        font-size: 24px;
+    }
+}
+
 /* section statistics */
 
-.energy-stats-section {
+.energysection {
   position: relative;
-  background-image: url("./image/solarfactory.webp"); 
+  background-image: url("./image/solarfactory.webp");
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -241,37 +365,39 @@ nav {
   color: #fff;
 }
 
-.energy-stats-overlay {
+.energyoverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(6, 5, 38, 0.7);
+  background: rgba(6, 5, 38, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.energy-stats-container {
+.energycontainer {
   display: flex;
   justify-content: space-around;
   width: 80%;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .energy-stat h3 {
   font-size: 48px;
   margin: 0;
   font-weight: bold;
-  color: #f1c40f
+  color: #f1c40f;
 }
 
 .energy-stat p {
   font-size: 18px;
   margin-top: 10px;
-  color: white;
+  color: #fff;
 }
+
 
 
 /* section about */
@@ -356,6 +482,55 @@ nav {
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
+
+@media (max-width: 992px) {
+    .aboutcontainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutcontent, 
+    .aboutimage {
+        flex: 1 1 100%;
+    }
+
+    .aboutcontent h2 {
+        font-size: 28px;
+    }
+
+    .aboutcontent p {
+        font-size: 15px;
+    }
+
+    .aboutimage img {
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .about-company {
+        padding: 50px 15px;
+    }
+
+    .aboutcontent h2 {
+        font-size: 24px;
+    }
+
+    .aboutcontent h3 {
+        font-size: 18px;
+    }
+
+    .aboutcontent p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .aboutimage img {
+        height: auto;
+        width: 100%;
+    }
+}
 
 /* section team */
 
@@ -447,6 +622,66 @@ nav {
   color: #f1c40f;
 }
 
+/* Tablet - below 992px */
+@media (max-width: 992px) {
+    .team-section {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .team-section h2 {
+        font-size: 32px;
+    }
+
+    .team-member {
+        width: 220px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 180px;
+        height: 230px;
+    }
+
+    .overlay h3 {
+        font-size: 16px;
+    }
+
+    .overlay p {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .team-section h2 {
+        font-size: 28px;
+    }
+
+    .team-container {
+        gap: 15px;
+    }
+
+    .team-member {
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+    }
+
+    .overlay h3 {
+        font-size: 15px;
+    }
+
+    .overlay p {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+    }
+}
 
 
 /* section work */
@@ -595,4 +830,122 @@ nav {
   .mainbox {
     margin-bottom: 40px;
   }
+}
+
+
+/* footer section */
+
+
+.footer {
+    background: url(./image/footer.webp) no-repeat center center/cover fixed;
+    color: #d8e2f3;
+    padding: 50px 0 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.footer-about {
+    flex: 1.2;
+    min-width: 250px;
+}
+
+.comlogo {
+    width: 170px;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-about p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #c6d4ea;
+}
+
+
+.footer-links,
+.footer-support,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4,
+.footer-support h4,
+.footer-contact h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #5ac8ff;
+}
+
+.footer-links ul,
+.footer-support ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-support ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a,
+.footer-support ul li a {
+    text-decoration: none;
+    color: #c8d3e2;
+    font-size: 15px;
+}
+
+.footer-links ul li a:hover,
+.footer-support ul li a:hover {
+    color: #5ac8ff;
+}
+
+
+.footer-contact p {
+    margin: 8px 0;
+    color: #cfd9ed;
+}
+
+.social-icons a {
+    margin-right: 12px;
+    color: #5ac8ff;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    color: #97e1ff;
+}
+
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #1c2a44;
+    padding-top: 12px;
+}
+
+.footer-bottom p {
+    color: #a8b7d4;
+    font-size: 14px;
+}
+
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .social-icons a {
+        margin: 0 8px;
+    }
 }
