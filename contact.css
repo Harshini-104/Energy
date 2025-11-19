@@ -178,7 +178,7 @@ nav {
 
 
 
-/* section contact */
+
 .contact {
   background: linear-gradient(135deg, #e0f7fa, #ffffff);
   color: #0a0f25;
@@ -201,12 +201,14 @@ nav {
 }
 
 
+
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: flex-start;
 }
+
 
 
 .contact-info {
@@ -268,8 +270,8 @@ nav {
 .social-links a:hover {
   background: #ffd60a;
   color: #0a0f25;
-  text-decoration: none;
 }
+
 
 
 .contact-form {
@@ -321,6 +323,70 @@ nav {
   background: #00b4d8;
   color: #fff;
 }
+
+
+
+
+@media (max-width: 992px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    margin-top: 0;
+  }
+
+  .contact h2 {
+    font-size: 36px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 60px 6%;
+  }
+
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 5px;
+    width: 300px;
+    
+  }
+
+  .info-item {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .social-links a {
+    width: 34px;
+    height: 34px;
+  }
+
+  .send-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+
 
 
 

@@ -147,7 +147,7 @@ nav {
   color: #666;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .stat-box {
     width: 48%;
@@ -160,7 +160,7 @@ nav {
   }
 }
 
-/* section graph */
+
 
 .energy-graph-section {
   padding: 70px 5%;
@@ -190,6 +190,50 @@ nav {
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
+
+
+@media (max-width: 768px) {
+
+  .energy-graph-section {
+    padding: 50px 5%;
+  }
+
+  .graph-title {
+    font-size: 30px;
+  }
+
+  .graph-sub {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .graph-wrapper {
+    padding: 18px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  .energy-graph-section {
+    padding: 40px 3%;
+  }
+
+  .graph-title {
+    font-size: 24px;
+  }
+
+  .graph-sub {
+    font-size: 14px;
+  }
+
+  .graph-wrapper {
+    padding: 15px;
+    border-radius: 12px;
+  }
+}
+
 
 
 /*  */
@@ -289,4 +333,203 @@ table th {
 table tr {
   height: 40px;
   border-bottom: 1px solid #272b52;
+}
+
+
+
+@media (max-width: 1024px) {
+  .top-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  .graph-title {
+    font-size: 30px;
+  }
+
+  .graph-wrapper {
+    padding: 18px;
+  }
+
+  .top-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card .value {
+    font-size: 30px;
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+
+  .ranking-card,
+  .status-card,
+  .feedback-card {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  .energy-graph-section {
+    padding: 50px 3%;
+  }
+
+  .graph-title {
+    font-size: 26px;
+  }
+
+  .graph-sub {
+    font-size: 15px;
+  }
+
+  .graph-wrapper {
+    padding: 15px;
+  }
+
+  .energy-dashboard {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card .value {
+    font-size: 26px;
+  }
+
+  .gauge-value {
+    font-size: 24px;
+  }
+
+  table tr {
+    font-size: 13px;
+  }
+}
+
+
+.footer {
+    background: url(./image/footer.webp) no-repeat center center/cover fixed;
+    color: #d8e2f3;
+    padding: 50px 0 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.footer-about {
+    flex: 1.2;
+    min-width: 250px;
+}
+
+.comlogo {
+    width: 170px;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-about p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #c6d4ea;
+}
+
+
+.footer-links,
+.footer-support,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4,
+.footer-support h4,
+.footer-contact h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #5ac8ff;
+}
+
+.footer-links ul,
+.footer-support ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-support ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a,
+.footer-support ul li a {
+    text-decoration: none;
+    color: #c8d3e2;
+    font-size: 15px;
+}
+
+.footer-links ul li a:hover,
+.footer-support ul li a:hover {
+    color: #5ac8ff;
+}
+
+
+.footer-contact p {
+    margin: 8px 0;
+    color: #cfd9ed;
+}
+
+.social-icons a {
+    margin-right: 12px;
+    color: #5ac8ff;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    color: #97e1ff;
+}
+
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #1c2a44;
+    padding-top: 12px;
+}
+
+.footer-bottom p {
+    color: #a8b7d4;
+    font-size: 14px;
+}
+
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .social-icons a {
+        margin: 0 8px;
+    }
 }

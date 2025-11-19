@@ -440,6 +440,7 @@ nav {
 /* section installation */
 
 .solar-qa-section {
+  background: url(./image/footer.webp) no-repeat center center/cover fixed;
   display: flex;
   padding: 50px 10%;
   gap: 40px;
@@ -454,11 +455,13 @@ nav {
 
 .qa-right {
   flex: 1;
+  color: white;
 }
 
 .accordion .acc-item {
   border-bottom: 1px solid #ddd;
   padding: 15px 0;
+  color: white;
 }
 
 .acc-header {
@@ -466,6 +469,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  color: white;
 }
 
 .acc-header h3 {
@@ -536,10 +540,12 @@ nav {
   display: flex;
   padding: 50px 10%;
   gap: 40px;
+  background: url(./image/footer.webp) no-repeat center center/cover fixed;
 }
 
 .windmill-left {
   flex: 1;
+  color: white;
 }
 
 .windmill-right img {
