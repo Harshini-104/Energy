@@ -367,6 +367,91 @@ nav {
   .project-details-left h2 {
     font-size: 32px;
   }
+
+  .project-details-right img {
+  width: 280px;
+  height: 250px;
+  
+}
+}
+
+
+/* section windmill */
+.windmill-project {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 10%;
+}
+
+.project-details-left img {
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.project-details-right h2 {
+  font-size: 32px;
+  color: #0a1a3d;
+  margin-bottom: 15px;
+}
+
+.project-desc {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.project-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.highlight-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.highlight-item i {
+  font-size: 30px;
+  color: #0088cc;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+
+  .windmill-project {
+    flex-direction: column;
+    padding: 60px 6%;
+    text-align: center;
+  }
+
+  .project-details-left img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .project-details-right h2 {
+    font-size: 28px;
+  }
+
+  .project-desc {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .project-highlights {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .highlight-item {
+    width: 90%;
+  }
 }
 
 

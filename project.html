@@ -2,232 +2,308 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="./project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="./project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- header section -->
-    <header class="header">
-        <nav>
-            <div class="logo">
-                <a href=""><img src="./image/logo-removebg-preview.webp" alt="company logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./service.html">Service</a></li>
-                <li><a href="./project.html">Projects</a></li>
-                <li><a href="./dashboard.html">Dashboard</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <a href="./loginin.html"><button class="loginbtn">LogIn</button></a>
-            </ul>
-            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
-        </nav>
-    </header>
+  <!-- header section -->
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href=""><img src="./image/logo-removebg-preview.webp" alt="company logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Service</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <a href="./loginin.html"><button class="loginbtn">LogIn</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
 
-    <!-- section hero -->
+  <!-- section hero -->
 
-    <section class="projects-hero">
-        <div class="projects-hero-left">
-            <h1>Our Projects</h1>
-            <p>
-                Explore our innovative solar, windmill, and clean-energy installations
-                that deliver powerful, sustainable results across the globe.
-            </p>
+  <section class="projects-hero">
+    <div class="projects-hero-left">
+      <h1 data-aos="zoom-in">Our Projects</h1>
+      <p data-aos="zoom-in">
+        Explore our innovative solar, windmill, and clean-energy installations
+        that deliver powerful, sustainable results across the globe.
+      </p>
 
+    </div>
+
+    <div class="projects-hero-right" data-aos="zoom-in">
+      <img src="./image/solarfactory.webp" alt="Projects" />
+    </div>
+  </section>
+
+
+  <!-- section images -->
+
+  <section class="projects-grid">
+    <h2 class="projects-title" data-aos="zoom-in">Our Recent Projects</h2>
+
+    <div class="grid-container">
+
+      <div class="grid-item" data-aos="zoom-in">
+        <img src="./image/solar.installation.webp" alt="">
+        <div class="overlay">
+          <h3>Solar Plant Installation</h3>
+          <p>50kW rooftop solar system for industrial usage.</p>
+        </div>
+      </div>
+
+      <div class="grid-item" data-aos="zoom-in">
+        <img src="./image/windmill instalation.webp" alt="">
+        <div class="overlay">
+          <h3>Windmill Farm Setup</h3>
+          <p>Renewable wind energy solution powering 1200 homes.</p>
+        </div>
+      </div>
+
+      <div class="grid-item" data-aos="zoom-in">
+        <img src="./image/solarfield.webp" alt="">
+        <div class="overlay">
+          <h3>Hybrid Solar Grid</h3>
+          <p>Solar + Battery hybrid system with 24/7 backup.</p>
+        </div>
+      </div>
+ 
+      <div class="grid-item" data-aos="zoom-in">
+        <img src="./image/economical.webp" alt="">
+        <div class="overlay">
+          <h3>Street Light Installation</h3>
+          <p>Energy-efficient LED solar street lights.</p>
+        </div>
+      </div>
+
+      <div class="grid-item" data-aos="zoom-in">
+        <img src="./image/electric.webp" alt="">
+        <div class="overlay">
+          <h3>Energy Storage Unit</h3>
+          <p>Smart battery storage for residential buildings.</p>
+        </div>
+      </div>
+
+      <div class="grid-item" data-aos="zoom-in">
+        <img src="./image/powerlines.webp" alt="">
+        <div class="overlay">
+          <h3>Off-Grid Power Setup</h3>
+          <p>Remote village electrification project.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section details -->
+
+  <section class="project-details">
+    <div class="project-details-left">
+
+      <h2 data-aos="zoom-in">Solar Power Plant Installation</h2>
+
+      <p class="project-desc" data-aos="zoom-in">
+        Our 50kW Solar Power Plant provides sustainable energy for industrial usage
+        with high efficiency photovoltaic panels, advanced monitoring systems,
+        and long-lasting durability. Installed with precision and safety compliance.
+      </p>
+
+      <div class="project-highlights">
+
+        <div class="highlight-item" data-aos="zoom-in">
+          <i class="fa-solid fa-solar-panel"></i>
+          <h4>Capacity</h4>
+          <p>50kW Industrial Solar Plant</p>
         </div>
 
-        <div class="projects-hero-right">
-            <img src="./image/solarfactory.webp" alt="Projects" />
+        <div class="highlight-item" data-aos="zoom-in">
+          <i class="fa-solid fa-clock"></i>
+          <h4>Completion Time</h4>
+          <p>45 Days</p>
         </div>
-    </section>
 
+        <div class="highlight-item" data-aos="zoom-in"> 
+          <i class="fa-solid fa-leaf"></i>
+          <h4>Energy Saved</h4>
+          <p>18,000 kWh per year</p>
+        </div>
 
-    <!-- section images -->
+        <div class="highlight-item" data-aos="zoom-in">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h4>Location</h4>
+          <p>Tamil Nadu, India</p>
+        </div>
 
-    <section class="projects-grid">
-  <h2 class="projects-title">Our Recent Projects</h2>
-
-  <div class="grid-container">
-
-    <div class="grid-item">
-      <img src="./image/solar.installation.webp" alt="">
-      <div class="overlay">
-        <h3>Solar Plant Installation</h3>
-        <p>50kW rooftop solar system for industrial usage.</p>
       </div>
+
     </div>
 
-    <div class="grid-item">
-      <img src="./image/windmill instalation.webp" alt="">
-      <div class="overlay">
-        <h3>Windmill Farm Setup</h3>
-        <p>Renewable wind energy solution powering 1200 homes.</p>
-      </div>
+    <div class="project-details-right" data-aos="zoom-in">
+      <img src="./image/solarfactory.webp" alt="Project Details">
     </div>
+  </section>
 
-    <div class="grid-item">
-      <img src="./image/solarfield.webp" alt="">
-      <div class="overlay">
-        <h3>Hybrid Solar Grid</h3>
-        <p>Solar + Battery hybrid system with 24/7 backup.</p>
-      </div>
-    </div>
+  <!-- section windmill -->
 
-    <div class="grid-item">
-      <img src="./image/economical.webp" alt="">
-      <div class="overlay">
-        <h3>Street Light Installation</h3>
-        <p>Energy-efficient LED solar street lights.</p>
-      </div>
-    </div>
-
-    <div class="grid-item">
-      <img src="./image/electric.webp" alt="">
-      <div class="overlay">
-        <h3>Energy Storage Unit</h3>
-        <p>Smart battery storage for residential buildings.</p>
-      </div>
-    </div>
-
-    <div class="grid-item">
-      <img src="./image/powerlines.webp" alt="">
-      <div class="overlay">
-        <h3>Off-Grid Power Setup</h3>
-        <p>Remote village electrification project.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- section details -->
-
-<section class="project-details">
+  <section class="project-details windmill-project">
+  
+  
   <div class="project-details-left">
+    <img src="./image/windmill.webp" alt="Windmill Project" data-aos="zoom-in">
+  </div>
 
-    <h2>Solar Power Plant Installation</h2>
+  
+  <div class="project-details-right">
 
-    <p class="project-desc">
-      Our 50kW Solar Power Plant provides sustainable energy for industrial usage 
-      with high efficiency photovoltaic panels, advanced monitoring systems, 
-      and long-lasting durability. Installed with precision and safety compliance.
+    <h2 data-aos="zoom-in">Windmill Installation Project</h2>
+
+    <p class="project-desc" data-aos="zoom-in">
+      Our advanced 1.5MW Wind Turbine System is designed to deliver reliable,
+      high-efficiency renewable power for industrial and commercial needs.
+      Engineered with precision, low-maintenance features, and smart monitoring.
     </p>
 
     <div class="project-highlights">
 
-      <div class="highlight-item">
-        <i class="fa-solid fa-solar-panel"></i>
+      <div class="highlight-item" data-aos="zoom-in">
+        <i class="fa-solid fa-wind"></i>
         <h4>Capacity</h4>
-        <p>50kW Industrial Solar Plant</p>
+        <p>1.5MW Wind Turbine System</p>
       </div>
 
-      <div class="highlight-item">
+      <div class="highlight-item" data-aos="zoom-in">
         <i class="fa-solid fa-clock"></i>
         <h4>Completion Time</h4>
-        <p>45 Days</p>
+        <p>60 Days</p>
       </div>
 
-      <div class="highlight-item">
+      <div class="highlight-item" data-aos="zoom-in">
         <i class="fa-solid fa-leaf"></i>
-        <h4>Energy Saved</h4>
-        <p>18,000 kWh per year</p>
+        <h4>Energy Generated</h4>
+        <p>4,50,000 kWh per year</p>
       </div>
 
-      <div class="highlight-item">
+      <div class="highlight-item" data-aos="zoom-in">
         <i class="fa-solid fa-map-location-dot"></i>
         <h4>Location</h4>
-        <p>Tamil Nadu, India</p>
+        <p>Coimbatore, Tamil Nadu, India</p>
       </div>
 
     </div>
 
   </div>
 
-  <div class="project-details-right">
-    <img src="./image/solarfactory.webp" alt="Project Details">
-  </div>
 </section>
 
-<!-- footer section -->
-    <footer class="footer">
-        <div class="footer-container">
 
-           
-            <div class="footer-about">
-                <img src="./image/logo-removebg-preview.webp" alt="Energy Logo" class="comlogo">
-                <p>
-                    Delivering powerful solar, wind, and renewable energy solutions for a greener and
-                    sustainable future. We innovate to energize communities and industries worldwide.
-                </p>
-            </div>
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="footer-container">
 
-           
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./project.html">Projects</a></li>
-                    <li><a href="./service.html">Services</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
 
-            
-            <div class="footer-support">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="./about.html#team">Team</a></li>
-                    <li><a href="./about.html#ener">Energy</a></li>
-                    <li><a href="./service.html#solutions">Energy Solutions</a></li>
-                    <li><a href="./index.html#gallery">Gallery</a></li>
-                    <li><a href="./about.html#work">How We Work</a></li>
-                </ul>
-            </div>
+      <div class="footer-about">
+        <img src="./image/logo-removebg-preview.webp" alt="Energy Logo" class="comlogo">
+        <p>
+          Delivering powerful solar, wind, and renewable energy solutions for a greener and
+          sustainable future. We innovate to energize communities and industries worldwide.
+        </p>
+      </div>
 
-            
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p><strong>Email:</strong> support@energy.com</p>
-                <p><strong>Phone:</strong> +91 98765 43210</p>
-                <p><strong>Address:</strong> 45 Green Power Street, Chennai, India</p>
 
-                <div class="social-icons">
-                    <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
-                    <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="./error.html"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
 
+
+      <div class="footer-support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./about.html#team">Team</a></li>
+          <li><a href="./about.html#ener">Energy</a></li>
+          <li><a href="./service.html#solutions">Energy Solutions</a></li>
+          <li><a href="./index.html#gallery">Gallery</a></li>
+          <li><a href="./about.html#work">How We Work</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Email:</strong> support@energy.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> 45 Green Power Street, Chennai, India</p>
+
+        <div class="social-icons">
+          <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+          <a href="./error.html"><i class="fab fa-twitter"></i></a>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 Energy Power Solutions. All Rights Reserved.</p>
-        </div>
-    </footer>
- <script>
-        function toggleMenu() {
-            const menu = document.querySelector(".nav-links");
-            const icon = document.querySelector(".menu-icon i");
+    </div>
 
-            menu.classList.toggle("open");
+    <div class="footer-bottom">
+      <p>© 2025 Energy Power Solutions. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".nav-links");
+      const icon = document.querySelector(".menu-icon i");
 
-            // Change icon
-            if (menu.classList.contains("open")) {
-                icon.classList.remove("fa-bars");
-                icon.classList.add("fa-xmark");
-            } else {
-                icon.classList.remove("fa-xmark");
-                icon.classList.add("fa-bars");
-            }
-        }
+      menu.classList.toggle("open");
+
+      // Change icon
+      if (menu.classList.contains("open")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+      } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+      }
+    }
+  </script>
+
+  <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
     </script>
 
 </body>
