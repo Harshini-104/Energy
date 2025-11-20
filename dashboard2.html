@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="./dashboard2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- header section -->
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href=""><img src="./image/logo-removebg-preview.webp" alt="company logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./home2.html">Home</a></li>
+        <li><a href="./about2.html">About</a></li>
+        <li><a href="./service2.html">Service</a></li>
+        <li><a href="./project2.html">Projects</a></li>
+        <li><a href="./dashboard2.html">Dashboard</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <a href="./loginin.html"><button class="loginbtn">LogIn</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
+
+<section class="oil-dashboard">
+
+  <!-- TOP ROW -->
+  <div class="dashboard-row">
+
+    <!-- Production Chart -->
+    <div class="card chart-card">
+      <h3>Oil Production Trend</h3>
+      <canvas id="productionChart"></canvas>
+      <span class="percentage">+12%</span>
+    </div>
+
+    <!-- Efficiency Score -->
+    <div class="card efficiency-card">
+      <h3>Operational Efficiency</h3>
+      <div class="circle">
+        <h1>82<span>%</span></h1>
+      </div>
+      <button class="details-btn">Details</button>
+    </div>
+
+    <!-- Upcoming Maintenance -->
+    <div class="card maintenance-card">
+      <h4>UPCOMING MAINTENANCE</h4>
+      <p>December 14, 2025 • 10:30 AM</p>
+      <h3>Pipeline Safety Inspection</h3>
+      <img src="./image/service2.webp" alt="Maintenance">
+    </div>
+
+  </div>
+
+  <!-- SECOND ROW -->
+  <div class="dashboard-row second">
+
+    <div class="card small-card">
+      <h4>Total Output</h4>
+      <h2>3.2M <span>Barrels</span></h2>
+      <p>Recorded this month</p>
+    </div>
+
+    <div class="card small-card">
+      <h4>Gas Extraction</h4>
+      <h2>+980K</h2>
+      <p>Increase from last month</p>
+    </div>
+
+    <div class="card small-card">
+      <h4>Well Performance</h4>
+      <h2>6.8%</h2>
+      <p>Improvement over 60 days</p>
+    </div>
+
+    <div class="card small-card">
+      <h4>CO₂ Emission Change</h4>
+      <h2>-3.2%</h2>
+      <p>Compared to last quarter</p>
+    </div>
+
+  </div>
+
+  <!-- THIRD ROW -->
+  <div class="dashboard-row third">
+
+    <!-- Left Funnel -->
+    <div class="card funnel-card">
+      <h3>Oil Production Funnel</h3>
+      <ul>
+        <li>Exploration — 1200 units</li>
+        <li>Drilling — 980 units</li>
+        <li>Extraction — 740 units</li>
+        <li>Refinement — 610 units</li>
+      </ul>
+    </div>
+
+   
+
+  </div>
+
+</section>
+
+ <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+
+
+            <div class="footer-about">
+                <img src="./image/logo-removebg-preview.webp" alt="Energy Logo" class="comlogo">
+                <p>
+                    Delivering powerful solar, wind, and renewable energy solutions for a greener and
+                    sustainable future. We innovate to energize communities and industries worldwide.
+                </p>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-support">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="./about.html#team">Team</a></li>
+                    <li><a href="./about.html#ener">Energy</a></li>
+                    <li><a href="./service.html#solutions">Energy Solutions</a></li>
+                    <li><a href="./index.html#gallery">Gallery</a></li>
+                    <li><a href="./about.html#work">How We Work</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> support@energy.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Address:</strong> 45 Green Power Street, Chennai, India</p>
+
+                <div class="social-icons">
+                    <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="./error.html"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Energy Power Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+var ctx = document.getElementById('productionChart').getContext('2d');
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        datasets: [{
+            data: [120, 150, 130, 180, 200, 170, 220],
+        }]
+    },
+    options: { responsive: true }
+});
+
+
+</script>
+
+
+  <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
+
+    <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".nav-links");
+      const icon = document.querySelector(".menu-icon i");
+
+      menu.classList.toggle("open");
+
+      // Change icon
+      if (menu.classList.contains("open")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+      } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+      }
+    }
+  </script>
+</body>
