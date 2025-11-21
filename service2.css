@@ -273,7 +273,7 @@ nav {
 
 .energy-services-section {
     padding: 80px 8%;
-    background: url(./image/aboutbg.jpg) no-repeat center center/cover fixed;
+    background: url(./image/aboutbg.webp) no-repeat center center/cover fixed;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -449,7 +449,7 @@ nav {
 /* section oil services */
 .oil-services {
     padding: 80px 10%;
-    background: url(./image/aboutbg.jpg) no-repeat center center/cover fixed;
+    background: url(./image/aboutbg.webp) no-repeat center center/cover fixed;
     font-family: "Poppins", sans-serif;
 }
 

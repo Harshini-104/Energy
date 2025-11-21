@@ -145,7 +145,7 @@ nav {
 /* section about */
 .about-main {
     padding: 80px 10%;
-    background: url("./image/background.jpg") no-repeat center center/cover fixed;
+    background: url("./image/background.webp") no-repeat center center/cover fixed;
 }
 
 .about-container {
@@ -691,7 +691,7 @@ nav {
 
 
 .work {
-  background: url("./image/teambg.jpg") no-repeat center center/cover fixed;
+  background: url("./image/teambg.webp") no-repeat center center/cover fixed;
   padding: 100px 10%;
   font-family: 'Poppins', sans-serif;
 }

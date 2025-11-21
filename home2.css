@@ -486,7 +486,7 @@ color: #2c3e50;
 
 .oilgas-services {
   padding: 90px 10%;
-  background: url(./image/bgfreature.png) no-repeat center center/cover fixed;
+  background: url(./image/bgfreature.webp) no-repeat center center/cover fixed;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
@@ -751,7 +751,7 @@ color: #2c3e50;
 
 .whatwedo-section {
     padding: 70px 10%;
-    background: url(./image/bgfreature.png) no-repeat center center/cover fixed;
+    background: url(./image/bgfreature.webp) no-repeat center center/cover fixed;
     font-family: "Poppins", sans-serif;
 }
 
