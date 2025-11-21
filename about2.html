@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -37,8 +46,8 @@
         <div class="about-hero-overlay"></div>
 
         <div class="about-hero-content">
-            <h1 data-aos="zoom-in">About Our Oil & Gas Solutions</h1>
-            <p data-aos="zoom-in">
+            <h1 data-aos="zoom-in" data-aos="zoom-in">About Our Oil & Gas Solutions</h1>
+            <p data-aos="zoom-in" data-aos="zoom-in">
                 We are committed to delivering high-performance oil and gas services through innovative
                 exploration, safe drilling operations, advanced refinery solutions, and sustainable
                 energy technologies. Our mission is to power industries with efficiency, safety,
@@ -73,7 +82,7 @@
 
                 <div class="about-energy-points">
 
-                    <div class="energy-point">
+                    <div class="energy-point" data-aos="fade-up">
                         <i class="fa-solid fa-oil-well"></i>
                         <div>
                             <h4>Expert Exploration</h4>
@@ -81,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="energy-point">
+                    <div class="energy-point" data-aos="fade-up">
                         <i class="fa-solid fa-fire-flame-curved"></i>
                         <div>
                             <h4>Refinery Operations</h4>
@@ -89,7 +98,7 @@
                         </div>
                     </div>
 
-                    <div class="energy-point">
+                    <div class="energy-point" data-aos="fade-up">
                         <i class="fa-solid fa-truck-fast"></i>
                         <div>
                             <h4>Global Distribution</h4>
@@ -117,10 +126,10 @@
             <!-- Right Content -->
             <div class="whychoose-content">
 
-                <h5 class="subtitle">We Are Petroleum</h5>
-                <h2>Why Choose Our Oil & Gas Solutions</h2>
+                <h5 class="subtitle" data-aos="zoom-in">We Are Petroleum</h5>
+                <h2 data-aos="zoom-in">Why Choose Our Oil & Gas Solutions</h2>
 
-                <p>
+                <p data-aos="zoom-in">
                     We deliver advanced petroleum engineering services powered by modern drilling,
                     extraction, and refinery technologies. With decades of industry experience,
                     we help companies operate safely, maximize output, and reduce environmental risk.
@@ -129,32 +138,32 @@
 
                 <div class="why-list">
 
-                    <div class="why-item">
+                    <div class="why-item" data-aos="zoom-in">
                         <i class="fa-solid fa-helmet-safety"></i>
                         <p>Highly Skilled Engineering Team</p>
                     </div>
 
-                    <div class="why-item">
+                    <div class="why-item" data-aos="zoom-in">
                         <i class="fa-solid fa-oil-well"></i>
                         <p>Advanced Drilling Technologies</p>
                     </div>
 
-                    <div class="why-item">
+                    <div class="why-item" data-aos="zoom-in">
                         <i class="fa-solid fa-tower-broadcast"></i>
                         <p>Safe & Sustainable Operations</p>
                     </div>
 
-                    <div class="why-item">
+                    <div class="why-item" data-aos="zoom-in">
                         <i class="fa-solid fa-gears"></i>
                         <p>High-Efficiency Extraction Systems</p>
                     </div>
 
-                    <div class="why-item">
+                    <div class="why-item" data-aos="zoom-in">
                         <i class="fa-solid fa-chart-line"></i>
                         <p>Proven Productivity Improvement</p>
                     </div>
 
-                    <div class="why-item">
+                    <div class="why-item" data-aos="zoom-in">
                         <i class="fa-solid fa-industry"></i>
                         <p>Modern Refinery Infrastructure</p>
                     </div>
@@ -475,6 +484,17 @@
             }
         });
     </script>
+
+    <script>
+        // $(document).on('ready', function () {
+        // initialization of aos
+        AOS.init({
+            duration: 650,
+            once: false,
+            mirror: true,
+        });
+    </script>
+
 
 
 </body>
