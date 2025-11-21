@@ -528,7 +528,7 @@ iframe{
     text-align: left;
   }
 
-  .social-icons a {
-    margin: 0 8px;
+ .social-icons a {
+    margin-top: 10px;
   }
 }
